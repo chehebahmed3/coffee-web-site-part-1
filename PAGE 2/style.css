@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+    text-align: none;
+
+}
+ 
+img{
+    width: 100%;
+}
+section{
+    padding: 5px 100px;
+}
+/*-----THE HEADER PARTS------------*/
+.header{
+    position: fixed;
+    width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   background-image: url(assets/images/Rectangle\ 1.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;  
+}
+.header_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+.header_items img{
+    padding: 0 30px;
+}
+.navbar ul{
+ display: flex;
+ padding: 0 200px ;
+}
+.navbar a{
+    color: white;
+    font-size: 20px;
+    padding: 0 30px;
+    font-family: 'Poppins',sans-serif;
+}
+/*------------------THE HOME PARTS----------------*/
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/images/first.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_items{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: start;
+   
+}
+.home_items h1{
+    position: relative;
+    color: white;
+    font-size: 70px;
+    left: 250px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+/*-----------------THE MENU PARTS---------------------*/
+.menu{
+width: 100%;
+min-height: 100vh;
+background-image: url(assets/images/Rectangle\ 20.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.menu_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.menu_title{
+    position: relative;
+    color: #6F3D28;
+    font-size: 26px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    top: 50px;
+}
+.menu_card{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "card1  card3 card5 card7"
+    "card2  card4 card6 card8"
+    ;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px;
+    gap: 120px;
+    top: 100px;
+}
+
+.menu_card .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card1;
+}
+
+
+.menu_card .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card2;
+}
+
+.menu_card .card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card3;
+}
+
+.menu_card .card4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card4;
+}
+
+.menu_card .card5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card5;
+}
+
+.menu_card .card6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card6;
+}
+
+.menu_card .card7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card7;
+}
+
+.menu_card .card8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card8;
+}
+.menu_card img{
+    width: 150px;
+    height: 150px;
+}
+.menu_card .p_one{
+
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+.menu_card .p_two{
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.menu_card .text_two{
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: #E04848;
+    font-family: 'Poppins',sans-serif;
+}
+.menu_card .text_three{
+    font-size:14px;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.menu_card .p_three{
+    position: relative;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    top: 10px;
+}
+.menu_card .p_four{
+    position: relative;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    top: 10px;
+}
+/*-------------THE AGENDA PART--------------*/
+.agenda{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+   background-color: whitesmoke;
+}
+.agenda_items{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.agenda_items .agenda_title{
+    position: relative;
+    align-self: flex-start;
+    font-family: 'Poppins',sans-serif;
+   font-size: 20px;
+   top: 70px;
+   left: 500px;
+}
+/*----------THE AGENDA PART----------*/
+.agenda_items .agenda_agenda{
+    position: relative;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    right: 600px;
+    top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+/*------THE PART ONE------*/
+.agenda_agenda .agenda_part_one{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 30px;
+    
+}
+.agenda_part_one .text_one{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    right: 60px;
+}
+.agenda_part_one .text_arrow{
+   position: relative;
+   left: 75px;
+}
+.agenda_part_one .text_arrow a{
+    position: relative;
+    color: black;
+    font-size: 30px;
+}
+.agenda_part_one .text_arrow a:hover{
+    color: grey; 
+}
+
+
+
+/*------------the part two -------------*/
+.agenda_agenda .agenda_part_two{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 70px;
+    gap: 2.9rem;
+}
+.agenda_part_two p{
+font-family: 'Poppins',sans-serif;
+font-size: 15px;
+font-weight: 600;
+}
+
+/*-------------THE THIRD PART-----------*/
+.agenda_agenda .agenda_part_three{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 20px;
+}
+
+.agenda_part_three p{
+    position: relative;
+    flex: 0 0 calc(15% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #D5D4DF;
+    top: 70px;
+    
+}
+
+.agenda_part_three p:hover{
+   background-color: #45539D;
+   color: white;
+}
+
+.agenda_part_three .number111,.number222,.number333,.number444{
+   background-color: #e2e1ed;
+   color: grey;
+}
+
+/*--------------THE BOOKING PART------------------*/
+.agenda_booking{
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    right: 400px;
+}
+.booking{
+    position: relative;
+    display: flex;
+    bottom: 30px;
+
+}
+.booking h4{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.booking input{
+    width: 120px;
+    border: none;
+    font-size: 30px;
+   border-bottom: solid 1px black;
+   margin-right: 20px;
+   background-color: whitesmoke;
+}
+
+.booking a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.booking .add{
+    margin-right: 20px;
+}
+.booking_text{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+    color: #F54848;
+    font-weight: 300;
+}
+
+.booking_button{
+    position: relative;
+    top: 30px;
+    left: 120px;
+}
+.booking_button a{
+    font-size: 30px;
+    background-color: #45539D;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: white;
+}
+.booking_button a:hover{
+    background-color: #2a3b8e;
+}
+
+/*-------------the footer parts----------------*/
+.footer{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/images/firthpage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_items{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/images/Rectangle\ 6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex: 0 0 calc(15% - 5px);
+    gap: 300px;
+}
+.footer_items .footer_icon{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 250px;
+    font-weight: bold;
+}
+.footer_nav h2{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+   margin-bottom: 50px;
+  color: white;
+  top: 250px;
+  font-weight: 500;
+  font-size: 25px;
+  
+}
+
+.footer_contact h2{
+    position: relative;
+     font-family: 'Poppins',sans-serif;
+    margin-bottom: 50px;
+   color: white;
+   top: 250px;
+   font-size: 25px;
+   font-weight: 500;
+}
+.footer_contact .tel {
+    text-decoration: underline;
+}
+.footer_copyright h2{
+    font-family: 'Poppins',sans-serif;
+    align-self: flex-end;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
